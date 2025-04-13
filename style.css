@@ -46,3 +46,124 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+img {
+	max-width: 100%;
+}
+
+/* ROOT */
+:root {
+
+	/* fonts */
+	--logo-font: 'DM Serif Display', sans-serif;
+	--heading-font: 'Work Sans', sans-serif;
+	--main-text: 'Martian Mono', sans-serif;
+	
+	/* colors */
+	--main-bgColor: #F1ECE7;
+	--main-text-color: #7A7676;
+}
+
+/* REUSABLE */
+
+body {
+	font-family: var(--main-text);
+}
+
+.container {
+	width: 90%;
+	max-width: 1260px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero-title, .savor-title {
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: -2px;
+}
+
+/* NAV */
+
+.header	{
+	background-color: var(--main-bgColor);
+}
+
+.nav {
+	padding: 1.5rem 0;
+}
+
+.nav-item:not(:nth-child(5)) {
+	display: none;
+}
+
+.logo {
+	font-family: var(--logo-font);
+	text-decoration: none;
+	color: #000;
+	font-size: 1.25rem;
+}
+
+.yellow-btn {
+	font-size: 1rem;
+	text-decoration: none;
+	color: #7A7E23;
+	background-color: #FFE82B;
+	border-radius: 40px;
+	padding: .75rem;
+	font-weight: 600;
+}
+
+/* HERO */
+
+.hero {
+	padding: 1.25rem 0 2.5rem 0;
+	background-color: var(--main-bgColor);
+}
+
+.hero-subtitle {
+	margin: 1.25rem 0 2.5rem 0;
+	color: var(--main-text-color);
+}
+
+.order-btn, .reserve__table-btn {
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+	/* width: 100%; */
+	padding: 1rem .625rem;
+	text-align: center;
+	border-radius: 40px;
+	text-decoration: none;
+}
+
+.order-btn {
+	background-color: #000;
+	color: #fff;
+	margin: 1.25rem 0;
+}
+
+.reserve__table-btn {
+	background-color: #fff;
+	color: #6D696D;
+}
+
+.hero__img-container {
+	margin-top: 1.25rem;
+}
+
+.hero-img {
+	border-radius: 55px;
+}
+
+/* SAVOR */
+
+.savor {
+	padding: 2.5rem 0;
+	background-color: var(--main-bgColor);
+}

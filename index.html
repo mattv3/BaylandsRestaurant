@@ -3,52 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Martian+Mono:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>BaylandsRestaurant</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <section class="container">
-            <nav>
+            <nav class="nav row">
                 <div class="logo-container">
-                    <a href="">Baylands Eatery</a>
+                    <a class="logo" href="">Baylands Eatery</a>
                 </div>
                 <div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Location</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Reserve</a></li>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link yellow-btn" href="#">Reserve</a></li>
                     </ul>
                 </div>
             </nav>
         </section>
     </header>
 
-    <main>
+    <main class="main">
 
         <section class="hero">
-            <div class="hero__text-container">
-                <h2>Discover the Flavors of Baylands:</h2>
-                <p>Welcome to Baylands, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse eius possimus optio.</p>
-                <a href="">Order Now</a>
-                <a href="">Reserve a Table</a>
-            </div>
-            <div class="hero-img-container">
-                <img class="hero-img" src="" alt="">
-            </div>
+            <section class="container">
+                <div class="hero__text-container">
+                    <h2 class="hero-title">Discover the Flavors of Baylands: The Premier East Asian Cuisine</h2>
+                    <p class="hero-subtitle">Welcome to Baylands, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse eius possimus optio.</p>
+                    <a class="order-btn" href="">Order Now</a>
+                    <a class="reserve__table-btn" href="">Reserve a Table</a>
+                </div>
+                <div class="hero__img-container">
+                    <img class="hero-img" src="assets/sec2img.png" alt="">
+                </div>
+            </section>
         </section>
 
         <section class="savor">
-            <div>
-                <img src="" alt="">
-            </div>
-            <div class="savor__text-container">
-                <h2>Savor the Flavors</h2>
-                <p>At Baylands, Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio facere.</p>
-                <span>Open Daily</span>
-            </div>
+            <section class="container">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div class="savor__text-container">
+                    <h2 class="savor-title">Savor the Flavors of Baylands</h2>
+                    <p>At Baylands, Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio facere.</p>
+                    <span>Open Daily</span>
+                </div>
+            </section>
         </section>
 
         <section class="contact">
@@ -141,7 +146,35 @@
         </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <section class="footer__logo-container">
+            <h2></h2>
+        </section>
+        <section class="quick-links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Lacation</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </section>
+        <section class="Our-company">
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Hours</a></li>
+                <li><a href="">Directions</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+        </section>
+        <section class="Connect with Us">
+            <ul>
+                <li><a href="">Meta</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">X</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>
