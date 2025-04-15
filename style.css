@@ -60,7 +60,8 @@ img {
 	--main-text: 'Martian Mono', sans-serif;
 	
 	/* colors */
-	--main-bgColor: #F1ECE7;
+	--bgColor-beige: #F1ECE7;
+	--bgColor-white: #FFFBFB;
 	--main-text-color: #7A7676;
 }
 
@@ -68,6 +69,8 @@ img {
 
 body {
 	font-family: var(--main-text);
+	color: var(--main-text-color);
+	background-color: var(--bgColor-white);
 }
 
 .container {
@@ -81,17 +84,69 @@ body {
 	justify-content: space-between;
 }
 
-.hero-title, .savor-title {
+.hero-title, .savor-title, .catering-title, .location-title {
 	font-size: 2rem;
 	font-weight: 600;
 	line-height: 1.2;
-	letter-spacing: -2px;
+	font-family: var(--heading-font);
+	color: #000;
 }
+
+.savor-title, .catering-title, .location-title {
+	margin: 1.25rem 0;
+}
+
+.hero-img, .savor-img, .catering-img, .location-img {
+	border-radius: 55px;
+}
+
+.savor-subtitle, .catering-subtitle, .location-subtitle {
+	margin-bottom: 1.25rem;
+}
+
+/* BUTTONS */
+
+.order-btn, .catering-btn, .directions {
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 1rem .625rem;
+	text-align: center;
+	border-radius: 40px;
+	text-decoration: none;
+	background-color: #000;
+	color: #fff;
+}
+
+.reserve__table-btn {
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 1rem .625rem;
+	text-align: center;
+	border-radius: 40px;
+	text-decoration: none;
+	background-color: #fff;
+	color: #6D696D;
+}
+
+.call-us {
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 1rem .625rem;
+	text-align: center;
+	border-radius: 40px;
+	text-decoration: none;
+	color: #6D696D;
+	border: 1px solid #817F81;
+}
+
 
 /* NAV */
 
 .header	{
-	background-color: var(--main-bgColor);
+	background-color: var(--bgColor-beige);
 }
 
 .nav {
@@ -122,48 +177,81 @@ body {
 /* HERO */
 
 .hero {
-	padding: 1.25rem 0 2.5rem 0;
-	background-color: var(--main-bgColor);
+	background-color: var(--bgColor-beige);
+	padding-bottom: 2.5rem;
+}
+
+.hero-img {
+	margin-top: 1.25rem;
 }
 
 .hero-subtitle {
 	margin: 1.25rem 0 2.5rem 0;
-	color: var(--main-text-color);
-}
-
-.order-btn, .reserve__table-btn {
-	display: block;
-	font-size: 1rem;
-	font-weight: 500;
-	/* width: 100%; */
-	padding: 1rem .625rem;
-	text-align: center;
-	border-radius: 40px;
-	text-decoration: none;
 }
 
 .order-btn {
-	background-color: #000;
-	color: #fff;
 	margin: 1.25rem 0;
 }
 
-.reserve__table-btn {
-	background-color: #fff;
-	color: #6D696D;
-}
-
-.hero__img-container {
-	margin-top: 1.25rem;
-}
-
-.hero-img {
-	border-radius: 55px;
-}
 
 /* SAVOR */
 
 .savor {
+	background-color: var(--bgColor-beige);
 	padding: 2.5rem 0;
-	background-color: var(--main-bgColor);
+}
+
+
+.open-daily {
+	color: #6D8DBC;
+}
+
+/* CATERING */
+
+.catering {
+	padding: 2.5rem 0;
+}
+
+/* LOCATION */
+
+.location {
+	padding: 2.5rem 0;
+}
+
+.location-title {
+	margin-top: 0;
+}
+
+.operations-container {
+	padding: 2.5rem 1.25rem;
+	border: 1px solid #817F81;
+	border-radius: 11.5px;
+}
+
+.operation-title {
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.hours__of-operation {
+	padding: 1.25rem 0;
+}
+
+.directions {
+	margin: 1.25rem 0;
+}
+
+.location-img {
+	margin-top: 1.25rem;
+}
+
+/* CAROUSEl */
+
+.carousel {
+	padding: 2.5rem 0;
+}
+
+.carousel-list, .carousel-card, .carousel-link {
+	width: 400px;
+	display: block;
 }
