@@ -58,11 +58,16 @@ img {
 	--logo-font: 'DM Serif Display', sans-serif;
 	--heading-font: 'Work Sans', sans-serif;
 	--main-text: 'Martian Mono', sans-serif;
-	
-	/* colors */
+
+	/* bg */
 	--bgColor-beige: #F1ECE7;
 	--bgColor-white: #FFFBFB;
+	--yellowBg-btn: #FFE82B;
+	--footer-bg: #F2EDE5;
+
+	/* colors */
 	--main-text-color: #7A7676;
+	--footer-color: #565252;
 }
 
 /* REUSABLE */
@@ -84,7 +89,7 @@ body {
 	justify-content: space-between;
 }
 
-.hero-title, .savor-title, .catering-title, .location-title {
+.hero-title, .savor-title, .catering-title, .location-title, .visitUs-title {
 	font-size: 2rem;
 	font-weight: 600;
 	line-height: 1.2;
@@ -92,7 +97,7 @@ body {
 	color: #000;
 }
 
-.savor-title, .catering-title, .location-title {
+.savor-title, .catering-title, .location-title, .visitUs-title {
 	margin: 1.25rem 0;
 }
 
@@ -100,11 +105,11 @@ body {
 	border-radius: 55px;
 }
 
-.savor-subtitle, .catering-subtitle, .location-subtitle {
+.savor-subtitle, .catering-subtitle, .location-subtitle, .visitUs-subtitle {
 	margin-bottom: 1.25rem;
 }
 
-/* BUTTONS */
+/* BLACK BUTTONS */
 
 .order-btn, .catering-btn, .directions {
 	display: block;
@@ -118,17 +123,6 @@ body {
 	color: #fff;
 }
 
-.reserve__table-btn {
-	display: block;
-	font-size: 1rem;
-	font-weight: 500;
-	padding: 1rem .625rem;
-	text-align: center;
-	border-radius: 40px;
-	text-decoration: none;
-	background-color: #fff;
-	color: #6D696D;
-}
 
 .call-us {
 	display: block;
@@ -140,6 +134,30 @@ body {
 	text-decoration: none;
 	color: #6D696D;
 	border: 1px solid #817F81;
+}
+
+/* YELLOW BUTTONS */
+
+.reserve__table-btn, .visitUs-btn {
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 1rem .625rem;
+	text-align: center;
+	border-radius: 40px;
+	text-decoration: none;
+	background-color: #fff;
+	color: #6D696D;
+}
+
+.yellow-btn, .visitUs-btn {
+	font-size: 1rem;
+	text-decoration: none;
+	color: #7A7E23;
+	background-color: var(--yellowBg-btn);
+	border-radius: 32px;
+	padding: .75rem;
+	font-weight: 600;
 }
 
 
@@ -162,16 +180,6 @@ body {
 	text-decoration: none;
 	color: #000;
 	font-size: 1.25rem;
-}
-
-.yellow-btn {
-	font-size: 1rem;
-	text-decoration: none;
-	color: #7A7E23;
-	background-color: #FFE82B;
-	border-radius: 40px;
-	padding: .75rem;
-	font-weight: 600;
 }
 
 /* HERO */
@@ -297,4 +305,57 @@ body {
 .card-link:hover {
 	color: #fff;
 	background-color: #000;
+}
+
+
+/* VISIT */
+
+.visitUs {
+	padding: 2.5rem 0;
+}
+
+.visitUs-title {
+	color: #363533;
+}
+
+.visitUs-img {
+	border: 1px solid red;
+}
+
+/* FOOTER */
+
+.footer {
+	padding: 2rem 0;
+	background-color: var(--footer-bg);
+	color: #565252;
+}
+
+.footer-logo {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
+.footer-link {
+	text-decoration: none;
+	color: var(--footer-color);
+}
+
+.footer-row {
+	display: flex;
+	font-size: 1rem;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.footer-title {
+	font-weight: 600;
+}
+
+.footer-item {
+	margin-top: 1rem;
+}
+
+.copyright {
+	margin-top: 2.5rem;
 }
