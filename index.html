@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Martian+Mono:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Swiper API -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>BaylandsRestaurant</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -92,48 +97,49 @@
 
         <section class="carousel">
             <section class="container">
-                <button class="carousel-button"></button>
-                <div class="carousel__track-container">
-                    <ul class="carousel-list">
-                        <li class="carousel-card">
+                <div class="carousel-container swiper">
+                    <ul class="carousel-list swiper-wrapper">
+                        <li class="carousel-card swiper-slide">
                             <img class="carousel-img" src="assets/carousel1.png" alt="">
                             <h2 class="card-title">Baylands Signature</h2>
                             <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores sequi ratione</p>
                             <a class="card-link" href="">Order Now</a>
                         </li>
-                        <li class="carousel-card">
+                        <li class="carousel-card swiper-slide">
                             <img class="carousel-img" src="" alt="">
                             <h2 class="card-title">Baylands Noodle</h2>
                             <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores sequi ratione</p>
                             <a class="card-link" href="">Order Now</a>
                         </li>
-                        <li class="carousel-card">
+                        <li class="carousel-card swiper-slide">
                             <img class="carousel-img" src="" alt="">
                             <h2 class="card-title">Baylands Entree</h2>
                             <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores sequi ratione</p>
                             <a class="card-link"href="">Order Now</a>
                         </li>
-                        <li class="carousel-card">
+                        <li class="carousel-card swiper-slide">
                             <img class="carousel-img" src="" alt="">
                             <h2 class="card-title">Baylands Signature 2</h2>
                             <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores sequi ratione</p>
                             <a class="card-link" href="">Order Now</a>
                         </li>
-                        <li class="carousel-card">
+                        <li class="carousel-card swiper-slide">
                             <img class="carousel-img" src="" alt="">
                             <h2 class="card-title">Baylands Entree 2</h2>
                             <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores sequi ratione</p>
                             <a class="card-link" href="">Order Now</a>
                         </li>
-                        <li class="carousel-card">
+                        <li class="carousel-card swiper-slide">
                             <img class="carousel-img" src="" alt="">
                             <h2 class="card-title">Baylands Entree 2</h2>
                             <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo maiores sequi ratione</p>
                             <a class="card-link" href="">Order Now</a>
                         </li>
                     </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <button class="carousel__button"></button>
             </section>
         </section>
 
@@ -188,5 +194,7 @@
         </section>
     </footer>
 </body>
+<!-- Swiper Api -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </html>

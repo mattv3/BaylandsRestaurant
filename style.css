@@ -263,18 +263,21 @@ body {
 .carousel {
 	padding: 2.5rem 0;
 }
-
-.carousel-list, .carousel-card, .card-link {
-	/* width: 400px;
-	display: block; */
-}
+/* 
+.carousel-card, .card-img {
+	width: 100%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	border-radius: 10px;
+} */
 
 /* CAROUSEL CARDS */
 
 .carousel-card {
+	width: 90%;
 	padding: 1rem;
 	border: 1px solid #817F81;
-	border-radius: 11.5px;
+	border-radius: 10px;
 }
 
 .carousel-img {
