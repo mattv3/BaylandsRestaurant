@@ -68,6 +68,7 @@ img {
 	/* colors */
 	--main-text-color: #7A7676;
 	--footer-color: #565252;
+	--nav-color: #767171;
 }
 
 /* REUSABLE */
@@ -150,7 +151,7 @@ body {
 	color: #6D696D;
 }
 
-.yellow-btn, .visitUs-btn {
+li .yellow-btn, .visitUs-btn {
 	font-size: 1rem;
 	text-decoration: none;
 	color: #7A7E23;
@@ -171,7 +172,13 @@ body {
 	padding: 1.5rem 0;
 }
 
-.nav-item:not(:nth-child(5)) {
+.nav-link {
+	text-decoration: none;
+	color: var(--nav-color);
+}
+
+
+.hide-smallScreen {
 	display: none;
 }
 
@@ -182,6 +189,22 @@ body {
 	font-size: 1.25rem;
 }
 
+@media all and (min-width: 800px) {
+
+	.nav-item {
+		display: inline-block;
+		margin-right: 1rem;
+	}
+
+	.nav-list {
+		align-self: center;
+	}
+}
+@media all and (min-width: 1366px) {
+	.logo {
+		font-size: 1.5rem;
+	}
+}
 /* HERO */
 
 .hero {
@@ -201,6 +224,26 @@ body {
 	margin: 1.25rem 0;
 }
 
+@media all and (min-width: 800px) {
+	.hero-row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.hero__text-container {
+		align-self: center;
+		width: 90%;
+	}
+
+	.order-btn, .reserve__table-btn {
+		display: inline-block;
+		padding: 1rem 1.5rem;
+	}
+
+	.hero__img-container {
+		margin-left: 2rem;
+	}
+}
 
 /* SAVOR */
 
@@ -212,12 +255,45 @@ body {
 
 .open-daily {
 	color: #6D8DBC;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+@media all and (min-width: 800px) {
+	.savor-row {
+		display: flex;
+		justify-content: center;
+	}
+
+	.savor__text-container {
+		align-self: center;
+		width: 90%;
+		margin-left: 2rem;
+	}
 }
 
 /* CATERING */
 
 .catering {
 	padding: 2.5rem 0;
+}
+
+@media all and (min-width: 800px) {
+	.catering-row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.catering__text-container {
+		margin-left: 2rem;
+		width: 90%;
+		align-self: center;
+	}
+
+	.catering-btn {
+		display: inline-block;
+		padding: 1rem 1.5rem;
+	}
 }
 
 /* LOCATION */
@@ -258,6 +334,36 @@ body {
 	margin-top: 1.25rem;
 }
 
+@media all and (min-width: 720px) {
+	.directions, .call-us {
+		display: inline-block;
+		padding: 1rem 1.5rem;
+	}
+}
+
+@media all and (min-width: 950px) {
+
+	.location-row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.directions, .call-us {
+		display: inline-block;
+		padding: 1rem 1.5rem;
+	}
+
+	.location-img {
+		margin-left: 2rem;
+
+	}
+
+	.location__text-container {
+		align-self: center;
+		width: 90%;
+	}
+}
+
 /* CAROUSEl */
 
 .carousel {
@@ -271,20 +377,15 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-}
-
-.carousel-container {
-	max-width: 1100px;
-	padding: 1rem;
-	overflow: hidden;
-	border: 2px solid #565252;
-	border-radius: 22px;
+	padding-bottom: 1.5rem;
 }
 
 .carousel-img {
 	border-radius: 22px;
 	width: 100%;
+	height: 100%;
 	object-fit: cover;
+	
 }
 
 .card-title {
@@ -320,6 +421,10 @@ body {
 
 /* VISIT */
 
+.visitUs-img {
+	border-radius: 22.5px;
+}
+
 .visitUs {
 	padding: 2.5rem 0;
 }
@@ -328,9 +433,6 @@ body {
 	color: #363533;
 }
 
-.visitUs-img {
-	border: 1px solid red;
-}
 
 /* FOOTER */
 

@@ -19,7 +19,7 @@ new Swiper('.carousel-container', {
     0: {
         slidesPerView: 1
     },
-    768: {
+    720: {
         slidesPerView: 2
     },
     1024: {
