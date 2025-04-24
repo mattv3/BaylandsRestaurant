@@ -341,7 +341,7 @@ li .yellow-btn, .visitUs-btn {
 	}
 }
 
-@media all and (min-width: 950px) {
+@media all and (min-width: 800px) {
 
 	.location-row {
 		display: flex;
@@ -353,13 +353,16 @@ li .yellow-btn, .visitUs-btn {
 		padding: 1rem 1.5rem;
 	}
 
-	.location-img {
+	.location__img-container {
 		margin-left: 2rem;
+		align-self: center;
+	}
 
+	.location-img {
+		margin-top: 0;
 	}
 
 	.location__text-container {
-		align-self: center;
 		width: 90%;
 	}
 }
@@ -431,6 +434,26 @@ li .yellow-btn, .visitUs-btn {
 
 .visitUs-title {
 	color: #363533;
+}
+
+@media all and (min-width: 800px) {
+	.visitUs-row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.visitUs__img-container {
+		margin-right: 2rem;
+	}
+
+	.visitUs__text-container {
+		align-self: center;
+	}
+
+	.visitUs-btn {
+		display: inline-block;
+		padding: 1rem 1.5rem;
+	}
 }
 
 
