@@ -81,7 +81,7 @@ body {
 
 .container {
 	width: 90%;
-	max-width: 1260px;
+	max-width: 1440px;
 	margin: 0 auto;
 }
 
@@ -200,9 +200,14 @@ li .yellow-btn, .visitUs-btn {
 		align-self: center;
 	}
 }
-@media all and (min-width: 1366px) {
+
+@media all and (min-width: 1200px) {
 	.logo {
 		font-size: 1.5rem;
+	}
+
+	.nav {
+		margin: 0 2rem;
 	}
 }
 /* HERO */
@@ -232,7 +237,6 @@ li .yellow-btn, .visitUs-btn {
 
 	.hero__text-container {
 		align-self: center;
-		width: 90%;
 	}
 
 	.order-btn, .reserve__table-btn {
@@ -242,6 +246,12 @@ li .yellow-btn, .visitUs-btn {
 
 	.hero__img-container {
 		margin-left: 2rem;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.hero__text-container {
+		padding-left: 11.875rem;
 	}
 }
 
@@ -272,6 +282,13 @@ li .yellow-btn, .visitUs-btn {
 	}
 }
 
+@media all and (min-width: 1200px) {
+	.savor__text-container {
+		padding-right: 11.875rem;
+		width: 60%;
+	}
+}
+
 /* CATERING */
 
 .catering {
@@ -287,12 +304,18 @@ li .yellow-btn, .visitUs-btn {
 	.catering__text-container {
 		margin-left: 2rem;
 		width: 90%;
-		align-self: center;
 	}
 
 	.catering-btn {
 		display: inline-block;
 		padding: 1rem 1.5rem;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.catering__text-container {
+		padding-right: 11.875rem;
+		width: 60%;
 	}
 }
 
@@ -456,6 +479,12 @@ li .yellow-btn, .visitUs-btn {
 	}
 }
 
+@media all and (min-width: 1200px) {
+	.visitUs__text-container {
+		/* padding-right: 11.875rem; */
+		width: 50%;
+	}
+}
 
 /* FOOTER */
 
@@ -493,4 +522,15 @@ li .yellow-btn, .visitUs-btn {
 
 .copyright {
 	margin-top: 2.5rem;
+}
+
+@media all and (min-width: 660px) {
+	.footer-row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.copyright {
+		text-align: center;
+	}
 }
